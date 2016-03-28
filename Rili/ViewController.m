@@ -47,7 +47,7 @@
                     
                     //创建事件
                     EKEvent *event  = [EKEvent eventWithEventStore:eventStore];
-                    event.title     = @"哈哈哈，我是日历事件啊";
+                    event.title     = @"哈哈哈，我是日历事件的反馈";
                     event.location = @"我在杭州西湖区留和路";
                     NSDateFormatter *tempFormatter = [[NSDateFormatter alloc]init];
                     [tempFormatter setDateFormat:@"dd.MM.yyyy HH:mm"];
