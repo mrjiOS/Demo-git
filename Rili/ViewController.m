@@ -74,7 +74,9 @@
                                           otherButtonTitles:nil];
                     [alert show];
                     
-                    NSLog(@"保存成功");
+                    NSLog(@"保存成功..............");
+                    
+                    
                     
                 }
             });
