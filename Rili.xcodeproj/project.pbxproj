@@ -15,6 +15,7 @@
 		0AC0D4691C8720E300556494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC0D4671C8720E300556494 /* LaunchScreen.storyboard */; };
 		0AC0D4741C8720E300556494 /* RiliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0D4731C8720E300556494 /* RiliTests.m */; };
 		0AC0D47F1C8720E300556494 /* RiliUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0D47E1C8720E300556494 /* RiliUITests.m */; };
+		0AC0D48D1C87217600556494 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC0D48C1C87217600556494 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0AC0D47A1C8720E300556494 /* RiliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC0D47E1C8720E300556494 /* RiliUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiliUITests.m; sourceTree = "<group>"; };
 		0AC0D4801C8720E300556494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC0D48C1C87217600556494 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC0D48D1C87217600556494 /* EventKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		0AC0D44D1C8720E300556494 = {
 			isa = PBXGroup;
 			children = (
+				0AC0D48C1C87217600556494 /* EventKit.framework */,
 				0AC0D4581C8720E300556494 /* Rili */,
 				0AC0D4721C8720E300556494 /* RiliTests */,
 				0AC0D47D1C8720E300556494 /* RiliUITests */,
@@ -207,6 +211,7 @@
 				TargetAttributes = {
 					0AC0D4551C8720E300556494 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3E5T2VJ29C;
 					};
 					0AC0D46E1C8720E300556494 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -413,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Rili/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sd.Rili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Rili/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sd.Rili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
